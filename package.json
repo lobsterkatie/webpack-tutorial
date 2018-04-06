@@ -1,0 +1,38 @@
+{
+  "name": "webpack_tutorial",
+  "version": "1.0.0",
+  "description": "based on the post at https://codeburst.io/creating-a-full-stack-web-application-with-python-npm-webpack-and-react-8925800503d9",
+  "author": "Katie Byers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobsterkatie/webpack-tutorial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lobsterkatie/webpack-tutorial/issues"
+  },
+  "homepage": "https://github.com/lobsterkatie/webpack-tutorial#readme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --progress --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
