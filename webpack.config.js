@@ -19,6 +19,7 @@ const config = {
     resolve: {
         extensions: ['.js', '.jsx', '.css']
     },
+    mode: "development",
 };
 
 module.exports = config;

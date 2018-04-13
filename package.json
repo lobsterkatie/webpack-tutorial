@@ -14,10 +14,10 @@
   "homepage": "https://github.com/lobsterkatie/webpack-tutorial#readme",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p --progress --config webpack.config.js",
-    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "build": "webpack -p --progress",
+    "dev-build": "webpack -d --progress",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --progress -d --config webpack.config.js --watch"
+    "watch": "webpack -d --progress --watch"
   },
   "babel": {
     "presets": [
